@@ -1,7 +1,10 @@
 FROM node:latest AS something
 
-RUN echo "the above image will successfully pin the digest"
+RUN something
 
 FROM node AS something-else
 
-RUN echo "this next line won't pin the digest"
+RUN something
+
+FROM docker.io/circleci/node
+
