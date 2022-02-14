@@ -1,4 +1,4 @@
-FROM node@latest AS something
+FROM node:latest AS something
 
 RUN echo "the above image will successfully pin the digest"
 
